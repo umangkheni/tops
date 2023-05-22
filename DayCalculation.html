@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href=
+"https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+          rel="stylesheet">
+          <script src=
+"https://code.jquery.com/jquery-1.10.2.js">
+    </script>
+    <script src=
+"https://code.jquery.com/ui/1.10.4/jquery-ui.js">
+    </script>
+    <style>
+        h1{
+            padding: 0px;
+            margin: 0px;
+        }
+        button{
+            width: 19rem;
+        }
+
+        
+        
+        </style>
+</head>
+<body>
+    <h1>From :- &nbsp;&nbsp;
+    <input id="date1" type="text" class="form-control" placeholder="From"></h1>
+    <h1>To :- &nbsp;  &nbsp; &nbsp; &nbsp; 
+    <input id="date2" type="text" class="form-control" placeholder="To"></h1>
+    
+    <br />
+    <button id="sub"
+            onclick="func()"
+            type="button"> Submit
+    </button>
+    <br />
+    <div>
+        <h3 id="ans">Difference in days</h3>
+    </div>
+
+
+<script >
+   $(function() {
+            $("#date1").datepicker();
+            var date1 = $("#date1")
+        });
+        $(function() {
+            $("#date2").datepicker();
+            var date2 = $("#date2")
+        });
+     
+        function func() {
+            // console.log(date1);
+            date1 = new Date(date1.value);
+            date2 = new Date(date2.value);
+            var milli_secs = date1.getTime() - date2.getTime();
+
+
+        
+            let days = milli_secs / (1000 * 3600 * 24);
+            let month = days/ 30;
+            let Years = month/12 ;
+            var anser = [ (`Years: ${Years} , <br>month: ${month} , <br> day:${days}`)];
+                
+           
+            document.getElementById("ans").innerHTML =
+            anser;
+        }
+</script>
+
+    
+</body>
+</html>
