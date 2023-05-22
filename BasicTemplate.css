@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    opacity: 0.5;
+
+}
+
+.sideBar {
+    width: 22%;
+    height: 100vh;
+    background-color: #8080807a;
+    /* opacity: 0.5; */
+    position: fixed;
+
+}
+
+.logo {
+    margin: 25%;
+    border: 2px solid white;
+    text-align: center;
+
+}
+
+.logo div {
+    margin: 2% -4% -4% 2%;
+    border: 2px solid white;
+    text-align: center;
+    padding: 10%;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.types {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 25%;
+    justify-content: center;
+}
+
+.types a {
+    margin: 10%;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+}
+
+.somilink {
+    margin: 20% auto;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.somilink .linkBox {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.facebook {
+    width: 100%;
+}
+
+.futtor {
+    margin: 10%;
+    position: absolute;
+    bottom: 30px;
+
+
+}
+
+.mainContTexBox {
+    position: absolute;
+    margin: 35% 10% 10% 50%;
+    background-color: #8080807a;
+    padding: 2%;
+    border: 2px solid white;
+    border-radius: 25px;
+
+}
+
+.mainCont {
+    position: absolute;
+}
+
+.mainimg {
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    margin: 5% 5% 5% 27%;
+    gap: 10%;
+}
+
+.card .card1 {
+    width: 45%;
+    background-color: #8080807a;
+    padding: 3%;
+}
+
+.card .card2 {
+    width: 45%;
+    background-color: #8080807a;
+    padding: 3%;
+}
+
+.work{
+    margin: 5% 5% 5% 27%;
+    border: 2px solid gray;
+}
+.workboxline{
+    margin: 1%;
+    border: 2px solid gray;
+    
+    padding: 4%;
+    
+}
+.workboxline div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+.workboxline div img{
+    width: 22%;
+}
+.clint{
+    margin: 5% 5% 5% 27%;
+}
+.clintBox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.companylogo{
+    width: 20%;
+    height: 5rem;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    margin: 5% 5% 5% 27%;
+    display: flex;
+    gap: 10px;
+}
+.talk{
+    border: 2px solid gray;
+    width: 50%;
+    padding: 1%;
+}
+.talk div{
+    border: 2px solid gray;
+    padding: 5%;
+}
+.formbox{
+    width: 50%;
+}
+.formbox input,textarea{
+    width: 90%;
+    margin: 5% 5% 0% 5%;
+    border: none;
+   outline: none;
+   border-bottom: 2px solid gray;
+}
+button{
+    padding: 7px 18px;
+    margin: 3% 0% 0% 78%;
+}
